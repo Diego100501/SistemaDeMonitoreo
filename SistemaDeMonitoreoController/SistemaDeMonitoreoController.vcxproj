@@ -18,15 +18,12 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="usuario.h" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{88B1ECAB-1DF9-4C25-9480-952EC3EBCCD5}</ProjectGuid>
+    <ProjectGuid>{167F9524-072C-48C8-B11E-4684D664EBB1}</ProjectGuid>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <Keyword>ManagedCProj</Keyword>
-    <RootNamespace>SistemaDeMonitoreoModel</RootNamespace>
+    <RootNamespace>SistemaDeMonitoreoController</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -113,6 +110,11 @@
       <AdditionalDependencies />
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaDeMonitoreoModel\SistemaDeMonitoreoModel.vcxproj">
+      <Project>{88b1ecab-1df9-4c25-9480-952ec3ebccd5}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
